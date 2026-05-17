@@ -48,7 +48,51 @@
           <aside class="hero-panel" aria-label="Service summary">
             <div class="panel-card panel-card-main">
               <span>Operational Focus</span>
-              <strong>Fast response, consistent supply, and dependable project delivery.</strong>
+              <div class="focus-slideshow" id="focus-slideshow" aria-label="Operational focus showcase">
+                <div class="focus-slides">
+                  <article class="focus-slide focus-slide-logistics is-active" data-slide-index="0">
+                    <img
+                      class="focus-slide-image"
+                      src="src/assets/showcase/logistics.jpg"
+                      alt="Construction material delivery trucks moving through a site access route"
+                      loading="eager"
+                    />
+                    <div class="focus-slide-content">
+                      <h3>Fast response logistics</h3>
+                      <p>Time-critical material deliveries coordinated to keep teams moving without downtime.</p>
+                    </div>
+                  </article>
+                  <article class="focus-slide focus-slide-hire" data-slide-index="1">
+                    <img
+                      class="focus-slide-image"
+                      src="src/assets/showcase/plant-hire.jpg"
+                      alt="Excavator and heavy equipment working on an active construction site"
+                      loading="lazy"
+                    />
+                    <div class="focus-slide-content">
+                      <h3>Reliable plant hire</h3>
+                      <p>Site-ready equipment prepared and dispatched quickly for daily civil works demands.</p>
+                    </div>
+                  </article>
+                  <article class="focus-slide focus-slide-build" data-slide-index="2">
+                    <img
+                      class="focus-slide-image"
+                      src="src/assets/showcase/project-delivery.jpg"
+                      alt="Completed building project with structured finishing and handover-ready facade"
+                      loading="lazy"
+                    />
+                    <div class="focus-slide-content">
+                      <h3>Dependable project delivery</h3>
+                      <p>From foundations to finishing, one coordinated team manages timelines with discipline.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="focus-dots" role="tablist" aria-label="Operational focus slides">
+                  <button class="focus-dot is-active" type="button" role="tab" aria-label="Show logistics showcase" aria-selected="true" data-slide="0"></button>
+                  <button class="focus-dot" type="button" role="tab" aria-label="Show plant hire showcase" aria-selected="false" data-slide="1"></button>
+                  <button class="focus-dot" type="button" role="tab" aria-label="Show delivery showcase" aria-selected="false" data-slide="2"></button>
+                </div>
+              </div>
             </div>
             <div class="panel-stats">
               <article>
@@ -107,6 +151,129 @@
             </article>
           </div>
         </section>
+
+        <section id="recent-work" class="section-block recent-work-section" aria-label="Recent work gallery">
+          <div class="section-heading">
+            <span class="eyebrow">Recent Work</span>
+            <h2>Quick look at active and completed site delivery.</h2>
+          </div>
+          <div class="recent-work-toolbar">
+            <div class="recent-work-filters" role="toolbar" aria-label="Filter gallery by category">
+              <button class="work-filter is-active" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+              <button class="work-filter" type="button" data-filter="logistics" aria-pressed="false">Logistics</button>
+              <button class="work-filter" type="button" data-filter="plant-hire" aria-pressed="false">Plant Hire</button>
+              <button class="work-filter" type="button" data-filter="building" aria-pressed="false">Building</button>
+            </div>
+            <div class="recent-work-nav" aria-label="Scroll project gallery">
+              <button class="work-nav-button" id="work-nav-prev" type="button" aria-label="Scroll gallery left" aria-controls="recent-work-grid">Previous</button>
+              <button class="work-nav-button" id="work-nav-next" type="button" aria-label="Scroll gallery right" aria-controls="recent-work-grid">Next</button>
+            </div>
+          </div>
+          <div class="recent-work-grid" id="recent-work-grid">
+            <article class="recent-work-card" data-category="logistics">
+              <button
+                class="recent-work-media"
+                type="button"
+                data-lightbox-src="src/assets/showcase/logistics.jpg"
+                data-lightbox-alt="Material delivery trucks arriving at project site"
+                data-lightbox-caption="Bulk Material Delivery"
+                aria-label="Open Bulk Material Delivery image"
+              >
+                <img src="src/assets/showcase/logistics.jpg" alt="Material delivery trucks arriving at project site" loading="lazy" />
+              </button>
+              <div class="recent-work-copy">
+                <h3>Bulk Material Delivery</h3>
+                <p>Scheduled supply runs completed for an active build phase.</p>
+              </div>
+            </article>
+            <article class="recent-work-card" data-category="plant-hire">
+              <button
+                class="recent-work-media"
+                type="button"
+                data-lightbox-src="src/assets/showcase/plant-hire.jpg"
+                data-lightbox-alt="Heavy plant equipment prepared for civil works"
+                data-lightbox-caption="Plant Hire Deployment"
+                aria-label="Open Plant Hire Deployment image"
+              >
+                <img src="src/assets/showcase/plant-hire.jpg" alt="Heavy plant equipment prepared for civil works" loading="lazy" />
+              </button>
+              <div class="recent-work-copy">
+                <h3>Plant Hire Deployment</h3>
+                <p>Equipment dispatched and operational for daily groundwork support.</p>
+              </div>
+            </article>
+            <article class="recent-work-card" data-category="building">
+              <button
+                class="recent-work-media"
+                type="button"
+                data-lightbox-src="src/assets/showcase/project-delivery.jpg"
+                data-lightbox-alt="Completed construction project ready for handover"
+                data-lightbox-caption="Project Completion"
+                aria-label="Open Project Completion image"
+              >
+                <img src="src/assets/showcase/project-delivery.jpg" alt="Completed construction project ready for handover" loading="lazy" />
+              </button>
+              <div class="recent-work-copy">
+                <h3>Project Completion</h3>
+                <p>Finishing phase delivered on time and prepared for handover.</p>
+              </div>
+            </article>
+            <article class="recent-work-card" data-category="logistics">
+              <button
+                class="recent-work-media"
+                type="button"
+                data-lightbox-src="src/assets/showcase/logistics-2.jpg"
+                data-lightbox-alt="Fleet line-up and logistics coordination at dispatch area"
+                data-lightbox-caption="Fleet Dispatch Coordination"
+                aria-label="Open Fleet Dispatch Coordination image"
+              >
+                <img src="src/assets/showcase/logistics-2.jpg" alt="Fleet line-up and logistics coordination at dispatch area" loading="lazy" />
+              </button>
+              <div class="recent-work-copy">
+                <h3>Fleet Dispatch Coordination</h3>
+                <p>Vehicle scheduling aligned with site timelines for uninterrupted supply flow.</p>
+              </div>
+            </article>
+            <article class="recent-work-card" data-category="plant-hire">
+              <button
+                class="recent-work-media"
+                type="button"
+                data-lightbox-src="src/assets/showcase/plant-hire-2.jpg"
+                data-lightbox-alt="Excavation equipment active on structural groundwork"
+                data-lightbox-caption="Groundwork Equipment Support"
+                aria-label="Open Groundwork Equipment Support image"
+              >
+                <img src="src/assets/showcase/plant-hire-2.jpg" alt="Excavation equipment active on structural groundwork" loading="lazy" />
+              </button>
+              <div class="recent-work-copy">
+                <h3>Groundwork Equipment Support</h3>
+                <p>Heavy equipment deployed to accelerate early-stage construction activities.</p>
+              </div>
+            </article>
+            <article class="recent-work-card" data-category="building">
+              <button
+                class="recent-work-media"
+                type="button"
+                data-lightbox-src="src/assets/showcase/building-2.jpg"
+                data-lightbox-alt="Final-stage building with completed exterior finishing"
+                data-lightbox-caption="Final Finish Handover"
+                aria-label="Open Final Finish Handover image"
+              >
+                <img src="src/assets/showcase/building-2.jpg" alt="Final-stage building with completed exterior finishing" loading="lazy" />
+              </button>
+              <div class="recent-work-copy">
+                <h3>Final Finish Handover</h3>
+                <p>Completed exterior and detail work prepared for client sign-off.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="work-lightbox" id="work-lightbox" aria-hidden="true" role="dialog" aria-label="Project image viewer">
+          <button class="work-lightbox-close" id="work-lightbox-close" type="button" aria-label="Close image viewer">Close</button>
+          <img id="work-lightbox-image" alt="Expanded project preview" />
+          <p id="work-lightbox-caption"></p>
+        </div>
 
         <section id="areas" class="section-block areas-section">
           <div class="section-heading">
@@ -372,6 +539,140 @@
             </div>
           </form>
           <script>
+            const focusSlideshow = document.getElementById('focus-slideshow');
+            if (focusSlideshow) {
+              const focusSlides = Array.from(focusSlideshow.querySelectorAll('.focus-slide'));
+              const focusDots = Array.from(focusSlideshow.querySelectorAll('.focus-dot'));
+              const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+              let activeSlideIndex = 0;
+              let autoSlideTimer;
+
+              function showFocusSlide(index) {
+                activeSlideIndex = index;
+                focusSlides.forEach((slide, slideIndex) => {
+                  slide.classList.toggle('is-active', slideIndex === index);
+                });
+                focusDots.forEach((dot, dotIndex) => {
+                  const isActive = dotIndex === index;
+                  dot.classList.toggle('is-active', isActive);
+                  dot.setAttribute('aria-selected', String(isActive));
+                });
+              }
+
+              function startFocusAutoplay() {
+                if (prefersReducedMotion || focusSlides.length < 2) {
+                  return;
+                }
+                clearInterval(autoSlideTimer);
+                autoSlideTimer = setInterval(() => {
+                  const nextIndex = (activeSlideIndex + 1) % focusSlides.length;
+                  showFocusSlide(nextIndex);
+                }, 4500);
+              }
+
+              focusDots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                  const nextIndex = Number(dot.dataset.slide);
+                  showFocusSlide(nextIndex);
+                  startFocusAutoplay();
+                });
+              });
+
+              focusSlideshow.addEventListener('mouseenter', () => clearInterval(autoSlideTimer));
+              focusSlideshow.addEventListener('mouseleave', () => startFocusAutoplay());
+              focusSlideshow.addEventListener('focusin', () => clearInterval(autoSlideTimer));
+              focusSlideshow.addEventListener('focusout', () => startFocusAutoplay());
+
+              showFocusSlide(0);
+              startFocusAutoplay();
+            }
+
+            const recentWorkSection = document.getElementById('recent-work');
+            if (recentWorkSection) {
+              const filterButtons = Array.from(recentWorkSection.querySelectorAll('.work-filter'));
+              const workCards = Array.from(recentWorkSection.querySelectorAll('.recent-work-card'));
+              const mediaButtons = Array.from(recentWorkSection.querySelectorAll('.recent-work-media'));
+              const workGrid = document.getElementById('recent-work-grid');
+              const workNavPrev = document.getElementById('work-nav-prev');
+              const workNavNext = document.getElementById('work-nav-next');
+              const lightbox = document.getElementById('work-lightbox');
+              const lightboxCloseBtn = document.getElementById('work-lightbox-close');
+              const lightboxImage = document.getElementById('work-lightbox-image');
+              const lightboxCaption = document.getElementById('work-lightbox-caption');
+
+              function updateWorkNavState() {
+                const maxScrollLeft = workGrid.scrollWidth - workGrid.clientWidth;
+                const hasOverflow = maxScrollLeft > 2;
+                workNavPrev.disabled = !hasOverflow || workGrid.scrollLeft <= 2;
+                workNavNext.disabled = !hasOverflow || workGrid.scrollLeft >= maxScrollLeft - 2;
+              }
+
+              function scrollWork(direction) {
+                workGrid.scrollBy({ left: direction * workGrid.clientWidth, behavior: 'smooth' });
+              }
+
+              function applyFilter(filterValue) {
+                workCards.forEach(card => {
+                  const shouldShow = filterValue === 'all' || card.dataset.category === filterValue;
+                  card.classList.toggle('is-filtered-out', !shouldShow);
+                });
+                filterButtons.forEach(button => {
+                  const isActive = button.dataset.filter === filterValue;
+                  button.classList.toggle('is-active', isActive);
+                  button.setAttribute('aria-pressed', String(isActive));
+                });
+                workGrid.scrollTo({ left: 0, behavior: 'auto' });
+                requestAnimationFrame(updateWorkNavState);
+              }
+
+              function openLightbox(src, alt, caption) {
+                lightboxImage.src = src;
+                lightboxImage.alt = alt;
+                lightboxCaption.textContent = caption;
+                lightbox.classList.add('is-open');
+                lightbox.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('lightbox-open');
+              }
+
+              function closeLightbox() {
+                lightbox.classList.remove('is-open');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('lightbox-open');
+                lightboxImage.src = '';
+              }
+
+              filterButtons.forEach(button => {
+                button.addEventListener('click', () => applyFilter(button.dataset.filter));
+              });
+
+              workNavPrev.addEventListener('click', () => scrollWork(-1));
+              workNavNext.addEventListener('click', () => scrollWork(1));
+              workGrid.addEventListener('scroll', updateWorkNavState);
+              window.addEventListener('resize', updateWorkNavState);
+
+              mediaButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                  openLightbox(button.dataset.lightboxSrc, button.dataset.lightboxAlt, button.dataset.lightboxCaption);
+                });
+              });
+
+              lightboxCloseBtn.addEventListener('click', closeLightbox);
+              lightbox.addEventListener('click', event => {
+                if (event.target === lightbox) {
+                  closeLightbox();
+                }
+              });
+
+              document.addEventListener('keydown', event => {
+                if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+                  closeLightbox();
+                }
+              });
+
+              applyFilter('all');
+              updateWorkNavState();
+            }
+
             const form = document.getElementById('enquiry-form');
             const submitBtn = document.getElementById('submit-btn');
             const successMsg = document.getElementById('success-message');
